@@ -1,0 +1,59 @@
+.movieRow{
+    margin-bottom: 30px;
+}
+.movieRow h2{
+    margin: 0px 0px 0px 30px;
+}
+.movieRow--listarea{
+    overflow-x: hidden; /*tudo que passa na tela horizontal sera cortado*/
+    padding-left: 30px;
+}
+.movieRow--list{
+    transition: all ease 0.5s;
+}
+.movieRow--item{
+    display: inline-block; /* o item ficará um lado do outro */
+    width: 200px;
+    cursor: pointer; /*funcionalidade de click */
+}
+.movieRow--item img{
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+.movieRow--item img:hover{ /* quando passar o mouse na imagem acoontecerá ...*/
+    transform: scale(1);
+}
+
+
+.movieRow--left,
+.movieRow--right{
+    position: absolute;
+    width: 40px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99; /*vai fica por cima das imagens do filme e abaixo do header*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /*não deixa o espaço extra adicionar uma barra de rolagem*/
+    cursor: pointer; /*area de clique*/
+    opacity: 0;
+}
+.movieRow--left{
+    left: 0;
+}
+.movieRow--right{
+    right: 0;
+}
+.movieRow:hover .movieRow--left, /*quando passar o mouse aparece e se tirar o mouse ele some*/
+.movieRow:hover .movieRow--right{
+    opacity: 1;
+}
+
+@media (max-with: 760px){
+    .movieRow--left,
+    .movieRow--right{
+        opacity: 1;
+    }
+}
