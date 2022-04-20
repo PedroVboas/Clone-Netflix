@@ -1,3 +1,5 @@
+# Clone" do Front-End do Netflix para fins de estudos, usando uma API The movie Database https://www.themoviedb.org/?language=pt-BR Feito por Pedro Henrique Vilas Boas
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
