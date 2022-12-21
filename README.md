@@ -1,3 +1,5 @@
+LINK PARA O SITE https://clone-netflix-flax.vercel.app
+
 # "Clone" do Front-End do Netflix a fim de estudos, usando a API The movie Database https://www.themoviedb.org/?language=pt-BR Feito por Pedro Henrique Vilas Boas
 
 # Getting Started with Create React App
